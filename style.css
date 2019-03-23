@@ -1233,9 +1233,9 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 67px 200px 33px 200px;
+    padding: 67px 140px 33px 140px;
     position: relative;
-    margin: 0 -70px;
+    margin: 0 auto;
     overflow-x: hidden;
     overflow-y: visible;
 }
@@ -1312,6 +1312,12 @@ a{
     position: absolute;
     right: 20px;
     bottom: 20px;
+}
+@media (max-width: 1300px) {
+    .footer{
+        margin: 0 -70px;
+        padding: 67px 200px 33px 200px;
+    }
 }
 @media (max-width: 1170px) {
     .footer{

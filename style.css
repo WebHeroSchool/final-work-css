@@ -1230,14 +1230,19 @@ a{
 
 .footer{
     background-color: #000;
+    margin: 0 calc(((100vw - 1170px) / 2) * -1);
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+.footer__wrap{
+    width: 1170px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 67px 140px 33px 140px;
     position: relative;
     margin: 0 auto;
-    overflow-x: hidden;
-    overflow-y: visible;
+    padding: 67px 200px 33px 195px;
+    box-sizing: border-box;
 }
 .footer__menu{
     display: flex;
@@ -1316,12 +1321,14 @@ a{
 @media (max-width: 1300px) {
     .footer{
         margin: 0 -70px;
-        padding: 67px 200px 33px 200px;
     }
 }
 @media (max-width: 1170px) {
     .footer{
         margin: 0 -47px;
+    }
+    .footer__wrap{
+        width: 100%;
         padding: 67px 127px 33px 127px;
     }
     .footer__menu-item{
@@ -1336,7 +1343,7 @@ a{
     }
 }
 @media (max-width: 961px){
-    .footer{
+    .footer__wrap{
         padding: 58px 50px 33px 50px;
     }
     .footer__menu{
@@ -1384,7 +1391,7 @@ a{
     }
 }
 @media (max-width: 730px){
-    .footer{
+    .footer__wrap{
         padding: 35px 0 33px 0;
     }
     .footer__menu{
